@@ -17,7 +17,7 @@ function adicionarOperador(operador: string): void {
 
 function calcular(): void {
     try {
-        valorVisor = eval(valorVisor).toString(); // Avalia a expressão matemática e converte para string
+        valorVisor = eval(valorVisor).toString(); // Avalia a expressão matemática e converte para string (string como operação em JSTS)
         const visor = document.getElementById('visor') as HTMLInputElement; // Obtém o campo do visor
         visor.value = valorVisor; // Exibe o resultado no visor
     } catch (e) {
