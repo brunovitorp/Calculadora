@@ -33,3 +33,9 @@ function limparVisor(): void {
     const visor = document.getElementById('visor') as HTMLInputElement; // Obtém o campo do visor
     visor.value = ''; // Limpa o texto no visor
 }
+
+function apagarUltimoCaracter() {
+    valorVisor = valorVisor.slice(0, -1); // Remove o último caractere do valorVisor
+    const visor = document.getElementById('visor') as HTMLInputElement; // Obtém o campo do visor
+    visor.value = valorVisor; // Atualiza o visor com o novo valor
+}

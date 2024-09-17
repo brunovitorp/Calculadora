@@ -13,6 +13,7 @@
         <input type="text" id="visor" disabled />
         
         <!-- Botões da calculadora, cada um chamando uma função correspondente ao ser clicado -->
+        
         <button onclick="adicionarNumero('1')">1</button>
         <button onclick="adicionarNumero('2')">2</button>
         <button onclick="adicionarNumero('3')">3</button>
@@ -32,6 +33,8 @@
         <button onclick="limparVisor()">C</button> <!-- Limpa o visor -->
         <button onclick="calcular()">=</button> <!-- Realiza o cálculo -->
         <button onclick="adicionarOperador('/')">/</button>
+        <button id="uc" onclick="apagarUltimoCaracter()">⌫</button>
+
     </div>
 
     <script src="../dist/calculadora.js"></script> <!-- Link para o arquivo JavaScript compilado -->

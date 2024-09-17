@@ -43,6 +43,9 @@ button {
     cursor: pointer; /* Muda o cursor ao passar sobre os botões */
     transition: background-color 0.3s; /* Transição suave ao mudar a cor de fundo */
 }
+#uc{
+    grid-column: span 4;
+}
 
 /* Cor de fundo ao passar o mouse sobre os botões */
 button:hover {
@@ -53,3 +56,4 @@ button:hover {
 button:active {
     background-color: #ccc;
 }
+

@@ -13,7 +13,7 @@ function adicionarOperador(operador) {
 }
 function calcular() {
     try {
-        valorVisor = eval(valorVisor).toString(); // Avalia a expressão matemática e converte para string
+        valorVisor = eval(valorVisor).toString(); // Avalia a expressão matemática e converte para string (string como operação em JSTS)
         const visor = document.getElementById('visor'); // Obtém o campo do visor
         visor.value = valorVisor; // Exibe o resultado no visor
     }
@@ -27,4 +27,9 @@ function limparVisor() {
     valorVisor = ''; // Limpa o valor armazenado
     const visor = document.getElementById('visor'); // Obtém o campo do visor
     visor.value = ''; // Limpa o texto no visor
+}
+function apagarUltimoCaracter() {
+    valorVisor = valorVisor.slice(0, -1); // Remove o último caractere do valorVisor
+    const visor = document.getElementById('visor'); // Obtém o campo do visor
+    visor.value = valorVisor; // Atualiza o visor com o novo valor
 }

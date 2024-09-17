@@ -2,7 +2,7 @@
 var _a;
 function login() {
     const username = document.getElementById("username").value;
-    const passwordInput = document.getElementById("password");
+    const passwordInput = document.getElementById("password"); //precisa alterar diretamente o valor do elemento HTML 
     const password = passwordInput.value;
     const storedUsername = localStorage.getItem("username");
     const storedPassword = localStorage.getItem("password");
@@ -14,7 +14,7 @@ function login() {
         }
         else {
             alert("Usuário ou senha inválidos.");
-            passwordInput.value = '';
+            passwordInput.value = ''; //precisa alterar diretamente o valor do elemento HTML 
         }
     }
     else {
